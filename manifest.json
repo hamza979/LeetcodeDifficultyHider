@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Leetcode Difficulty Hider",
+  "version": "0.0.0.1",
+  "description": "Leetcode Difficulty Hider",
+  "icons": {
+           "512": "512.png",
+          "128": "128.png" },
+ 
+  "content_scripts": [{
+    "js": ["problems.js"],
+    "matches": ["https://leetcode.com/problems/*"]
+  },
+  {
+    "js": ["problemset.js"],
+    "matches": ["https://leetcode.com/problemset/*"]
+  },
+   {
+    "js": ["tag.js"],
+    "matches": ["https://leetcode.com/company/*","https://leetcode.com/tag/*"]
+  }]
+}
